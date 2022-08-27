@@ -19,6 +19,8 @@ header{
     background-repeat: no-repeat;
     background-position: top;
     height: 800px;
+    /* height: 80vh; */
+    /* height: 100%; */
     width: 100%;
 }
 
@@ -43,6 +45,28 @@ button.portal{
     font-weight: 400;
 }
 
+.partnership{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 3px solid red; */
+    height: 350px;
+}
+
+.partnership .companies{
+    display: flex;
+    padding-top: 5rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid green; */
+}
+
+.company{
+    padding: 0 7rem;
+}
 
 
 @media screen and (max-width: 1850px) {
