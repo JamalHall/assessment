@@ -1,1 +1,52 @@
 /* Write CSS rules here: */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* body{
+    height: 100vh;
+} */
+
+header{
+    background-image: url("./assets/banner_image_1.png");
+    /* background-color: black; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 800px;
+    width: 100%;
+}
+
+header nav{
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+button.portal{
+    background-color: #FF9900;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 157px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+
+@media screen and (max-width: 1850px) {
+    header{
+        background-size: contain;
+    }
+}   
