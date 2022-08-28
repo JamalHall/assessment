@@ -99,8 +99,9 @@ section{
     justify-content: space-between;
     align-items: center;
     /* border: 3px solid orange; */
-    padding: 5rem 3rem;
+    /* padding: 5rem 3rem; */
     width: auto;
+    margin: 5rem 0;
 }
 
 section .section-title{
@@ -110,7 +111,7 @@ section .section-title{
     font-size: 3.5rem;
     /* border: 2px solid green; */
     /* flex-grow: 1; */
-    width: 450px;
+    /* width: 450px; */
     margin-right: 5rem;
     /* width: 100px; */
 }
@@ -271,10 +272,89 @@ footer .contact button{
     border: none;
 }
 
+
+
 @media screen and (min-width: 1850px) {
     header img.bg-image{
         object-fit: cover;
         height: 770px;
-        /* border: 2px solid blue; */
+        border: 2px solid blue;
     }
-}   
+}
+
+@media screen and (max-width: 1200px) {
+    header nav{
+        height: 200px;
+        padding: 1rem 3rem;
+    }
+
+    button.portal{
+        height: 45px;
+        width: 145px;
+        font-size: 1.1rem;
+    }
+
+    header .logo img{
+        /* height: 40px; */
+    }
+
+    section{
+        flex-direction: column;
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: center;
+    }
+    section .section-title{
+        width: 100%;
+        /* border: 2px solid #008000; */
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+    section .section-text{
+        /* border: 2px solid yellow; */
+        margin: 2rem auto;
+        text-align: center;
+        width: 500px;
+        
+    }
+    section .cards{
+        flex-direction: column;
+        /* border: 2px solid red; */
+        align-items: center;
+    }
+}  
+
+
+@media screen and (max-width: 750px){
+    header nav{
+        height: 100px;
+        padding: 0 1rem;
+    }
+
+    button.portal{
+        height: 35px;
+        width: 125px;
+        font-size: 0.9rem;
+    }
+
+    header .logo img{
+        height: 40px;
+    }
+
+    section .section-text{
+        width: 300px;
+    }
+
+    .divider{
+        width: 300px;
+    }
+
+    section .cards .card{
+        width: 300px;
+    }
+
+    .sponsers .content .logos .logo{
+        margin: 1rem 1rem;
+    }
+}
