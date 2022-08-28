@@ -310,7 +310,7 @@ footer .contact button{
     top: 0;
     left: 0;
     z-index: 10;
-    /* display: none; */
+    display: none;
     
 }
 
@@ -428,6 +428,14 @@ footer .contact button{
         /* border: 2px solid red; */
         align-items: center;
     }
+    
+    .modal{
+        width: 650px;
+    }
+
+    .modal h2{
+        font-size: 1.9rem;
+    }
 }  
 
 
@@ -466,6 +474,28 @@ footer .contact button{
 
     .sponsers .content .logos .logo{
         margin: 1rem 1rem;
+    }
+
+    .modal{
+        width: 450px;
+        text-align: center;
+    }
+
+    .modal h2{
+        font-size: 1.9rem;
+    }
+
+    .modal input{
+        text-align: center;
+    }
+
+    .modal input{
+        text-align: center;
+        width: 360px;
+    }
+
+    .modal button{
+        width: 360px;
     }
 }
 
@@ -569,5 +599,24 @@ footer .contact button{
     footer .contact form input, footer .contact button{
         width: 250px;
         text-align: center;
+    }
+
+    .modal{
+        width: 280px;
+        text-align: center;
+    }
+
+    .modal h2{
+        font-size: 1.5rem;
+        margin: 3rem;
+    }
+
+    .modal input{
+        text-align: center;
+        width: 190px;
+    }
+
+    .modal button{
+        width: 190px;
     }
 }
