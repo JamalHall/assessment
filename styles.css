@@ -229,6 +229,48 @@ section .cards .card{
     margin: 1rem 5rem;
 }
 
+footer{
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2.footer-message{
+    color: #FF9900;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.8rem;
+    margin: 5rem 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+footer .contact form{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact form input{
+    margin-bottom: 1.6rem;
+    height: 48px;
+    width: 430px;
+    padding: 1rem;
+    outline: none;
+}
+
+footer .contact button{
+    height: 48px;
+    width: 430px;
+    margin: 1.6rem 0;
+    background-color: #FF9900;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
 @media screen and (min-width: 1850px) {
     header img.bg-image{
         object-fit: cover;
