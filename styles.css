@@ -280,6 +280,10 @@ footer .contact button{
         height: 770px;
         border: 2px solid blue;
     }
+
+    section .cards .card{
+        width: 850px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
