@@ -25,7 +25,15 @@ header{
 #header-image2{
     position: absolute;
     top: 0;
-    left: -1246px;
+    left: -100%;
+    /* transform: translateX(500px); */
+    transition: 1.5s;
+}
+
+#header-image3{
+    position: absolute;
+    top: 0;
+    left: -100%;
     /* transform: translateX(500px); */
     transition: 1.5s;
 }

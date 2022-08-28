@@ -6,7 +6,7 @@ const backdrop = document.querySelector(".backdrop")
 const modal = document.querySelector(".modal")
 
 const headerImage = document.querySelector("#header-image")
-const image1 = document.querySelector("#header-image1");
+const image1 = document.querySelector("#header-image3");
 const image2 = document.querySelector("#header-image2");
 // const images = ["./assets/banner_image_1.png","./assets/banner_image_2.png"]
 let counter = 0;
@@ -30,14 +30,28 @@ backdrop.addEventListener("click", () => {
 })
 
 
-// setInterval(() => {
-//     if(counter === 0) {
-//         // headerImage.src = images[counter];
-//         image2.style.transform = `translateX(${imageWidth}px)`;
-//         counter++;
-//     } else {
-//         // headerImage.src = images[counter];
-//         image2.style.transform = `translateX(${imageWidth}px)`;
-//         counter = 0;
-//     }
-// }, 5000);
+setInterval(() => {
+    if(counter === 0) {
+        image2.style.left = 0;
+        image1.style.left = "-100%";
+        
+        
+        setTimeout(() => {
+            image1.style.display = "block";
+        }, 1500)
+        counter++;
+    } else {
+
+        image1.style.left = 0;
+        setTimeout(() => {
+            image2.style.left = "-100%";
+        },2000)
+        setTimeout(() => {
+            
+            image1.style.display = "none";
+            
+        },3500)
+        
+        counter = 0;
+    }
+}, 5000);
