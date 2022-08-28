@@ -145,7 +145,7 @@ section .cards{
     display: flex;
     justify-content: space-between;
     /* border: 3px solid red; */
-    width: 100%;;
+    width: 100%;
 }
 
 section .cards .card{
@@ -278,7 +278,7 @@ footer .contact button{
     header img.bg-image{
         object-fit: cover;
         height: 770px;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
 
     section .cards .card{
@@ -360,5 +360,99 @@ footer .contact button{
 
     .sponsers .content .logos .logo{
         margin: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header nav{
+        height: 50px;
+    }
+    .partnership .companies{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .company{
+        margin-bottom: 3rem;
+    }
+    main{
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+    section.section-cards{
+        align-items: center;
+    }
+    section .section-title{
+        /* border: 2px solid green; */
+        font-size: 2.0rem;
+        margin: 0;
+        width: 300px;
+    }
+    section.section-cards .section-title{
+        width: 200px;
+        /* text-align: center; */
+        /* border: 2px solid yellow; */
+
+    }
+    section .cards{
+        width: 200px;
+    }
+    section .cards .card{
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid purple; */
+        margin: 2rem 0;
+        padding: 2rem 0;
+    }
+    .cards .card h2.card-header{
+        font-size: 1.9rem;
+        width: 230px;
+        /* border: 2px solid red; */
+    }
+    .cards .card h3.card-title{
+        font-size: 1.2rem;
+        /* border: 2px solid blue; */
+        width: 200px;
+    }
+    .cards .card p.card-text{
+        /* font-size: 0.8rem; */
+        width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        /* border: 2px solid green; */
+    }
+  
+    section .section-text{
+        width: 200px;
+        margin: 2rem 0;
+    }
+    .divider{
+        width: 100px;
+    }
+    .sponsers .content{
+        justify-content: center;
+    }
+    .sponsers .content h2.message{
+        font-size: 1.7rem;
+        width: 200px;
+        /* border: 2px solid red; */
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .sponsers .content .logos{
+        flex-direction: column;
+    }
+    .sponsers .content .logos .logo{
+        margin: 2rem 0;
+    }
+    h2.footer-message{
+        font-size: 2rem;
+    }
+    footer .contact form input, footer .contact button{
+        width: 250px;
+        text-align: center;
     }
 }
