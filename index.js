@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path'
 
 import authRoute from './routes/auth.js'
 
@@ -21,6 +22,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(__dirname));
+
+// app.set('view engine', 'ejs');
+
 // const testUser = new User({
 //     name: "Sina",
 //     password: "sina123",
@@ -30,6 +40,10 @@ app.use(express.urlencoded({extended: true}));
 // await testUser.save();
 
 app.use('/auth', authRoute);
+
+app.get('/parentPortal', (req, res) => {
+    res.sendFile(__dirname + '/parentPortal.html')
+})
 
 
 // app.post('/signup', (req, res) => {

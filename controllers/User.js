@@ -1,6 +1,7 @@
 import User from "../models/User.js";
 import ExpressError from "../utils/ExpressError.js";
 
+
 export const signup = async (req, res, next) => {
     try {
         const {userEmail, userName, userPassword} = req.body;
@@ -42,7 +43,11 @@ export const login = async (req, res, next) => {
         if(!isPasswordCorrect) throw new ExpressError("Password is incorrect", 401);
  
         console.log(req.body)
-        res.send("User Found");
+        // res.sendFile("../parentPortal.html");
+        // console.log(__dirname);
+        // res.render('../parentPortal.html');
+        res.redirect('/parentPortal');
+        // res.send("User Found");
     } catch(error){
         next(error)
     }
