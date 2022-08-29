@@ -5,7 +5,7 @@ export const signup = async (req, res, next) => {
     try {
         const {userEmail, userName, userPassword} = req.body;
 
-        const existingUser = await User.findOne({email: userEmail});
+        const existingUser = await User.findOne({email: userEmail.toLowerCase()});
 
         if(existingUser) throw new ExpressError("User Already Exists", 404)
 
@@ -14,7 +14,7 @@ export const signup = async (req, res, next) => {
         const newUser = new User({
             name: userName,
             password: userPassword,
-            email: userEmail
+            email: userEmail.toLowerCase()
         });
 
         await newUser.save();
@@ -33,7 +33,7 @@ export const signup = async (req, res, next) => {
 export const login = async (req, res, next) => {
     try{
         const {userEmail, userName, userPassword} = req.body;
-        const user = await User.findOne({email: userEmail});
+        const user = await User.findOne({email: userEmail.toLowerCase()});
 
         if(!user) throw new ExpressError("User Not Found", 404);
 
