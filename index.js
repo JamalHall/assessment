@@ -41,6 +41,10 @@ app.use(express.static(__dirname));
 
 app.use('/auth', authRoute);
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html') 
+})
+
 app.get('/parentPortal', (req, res) => {
     res.sendFile(__dirname + '/parentPortal.html')
 })
