@@ -1,3 +1,627 @@
-body{
-    background-color: red;
+/* Write CSS rules here: */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100vw;
+    /* border: 2px solid green; */
+}
+
+header h2{
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+    color: #FFF;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    /* border: 2px solid red; */
+}
+
+
+
+#header-image2{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* transform: translateX(500px); */
+    transition: 1.5s;
+}
+
+#header-image3{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* transform: translateX(500px); */
+    transition: 1.5s;
+}
+
+header img.bg-image{
+    /* height: 800px; */
+    /* height: 100%; */
+    /* height: 80vh; */
+    width: 100%;
+    object-fit: contain;
+    object-position: top center;
+    /* border: 2px solid red; */
+}
+
+header nav{
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* border: 2px solid red; */
+}
+
+header nav .logo img{
+    width: 120px;
+    height: 50%;
+    /* border: 3px solid blue; */
+}
+
+button.portal{
+    background-color: #FF9900;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 157px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+.partnership{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 3px solid green; */
+    /* height: 250px; */
+}
+
+.partnership .companies{
+    display: flex;
+    padding: 4rem 0;
+    width: 100vw;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid green; */
+}
+
+.company{
+    padding: 0 5rem;
+    /* border: 3px solid purple; */
+    /* height: 50px; */
+    /* flex: 1 1 0; */
+}
+.company img {
+    height: 60px;
+}
+
+main{
+    background-color: #151515;
+    color: white;
+    /* border: 3px solid red; */
+    padding: 3rem 8rem;
+}
+
+.schedule{
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-image-container{
+    position: relative;
+}
+
+.schedule-image-container h2{
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 25px;
+    width: 300px;
+    font-size: 2.8rem;
+    font-family: 'Alfa Slab One', cursive;
+    color: #FF9900;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.schedule-info{
+    margin-bottom: 2rem;
+}
+
+.schedule-info-container{
+    /* border: 2px solid purple; */
+    margin-left: 2rem;
+}
+
+.schedule-info .title{
+    font-size: 1.8rem;
+    font-family: 'Alfa Slab One', cursive;
+    color: #FF9900;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-bottom: 1rem;
+}
+
+.schedule-info .text{
+    font-weight: 600;
+    line-height: 21px;
+    padding-right: 1rem;
+}
+
+.cards .card h2.card-header{
+    font-size: 2.2rem;
+    color: #FF9900;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.cards .card h3.card-title{
+    font-size: 1.4rem;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    /* line-height: 32px; */
+}
+
+.cards .card p.card-text{
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sponsers{
+    position: relative;
+    /* height: 400px; */
+    /* border: 2px solid green; */
+}
+
+.sponsers img.sponsers-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* border: 2px solid red; */
+}
+
+.sponsers .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsers .content h2.message{
+    font-size: 2.2rem;
+    color: #FF9900;
+    font-family: 'Alfa Slab One', cursive;
+    width: 450px;
+    margin: 8rem 0;
+    line-height: 54px;
+    letter-spacing: 3px;
+    /* border: 2px solid red; */
+}
+
+.sponsers .content .logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    /* width: 400px; */
+    /* border: 2px solid green; */
+}
+
+.sponsers .content .logos .logo{
+    margin: 1rem 5rem;
+}
+
+footer{
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2.footer-message{
+    color: #FF9900;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.8rem;
+    margin: 5rem 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+footer .contact form{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact form input{
+    margin-bottom: 1.6rem;
+    height: 48px;
+    width: 430px;
+    padding: 1rem;
+    outline: none;
+}
+
+footer .contact button{
+    height: 48px;
+    width: 430px;
+    margin: 1.6rem 0;
+    background-color: #FF9900;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.modal-container{
+    height: 100vh;
+    position:absolute;
+}
+
+.backdrop{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    
+}
+
+.modal{
+    background-color: #FFF;
+    height: 450px;
+    width: 800px;
+    position: absolute;
+    z-index: 11;
+    /* margin: 0 auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    position: fixed;
+}
+
+.modal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal p{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: red;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+}
+
+.modal h2{
+    margin: 3rem 0;
+    color: #FF9900;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+
+}
+
+.modal input{
+    margin-bottom: 1.6rem;
+    height: 48px;
+    width: 430px;
+    padding: 1rem;
+    outline: none;
+    
+}
+
+.modal button{
+    height: 48px;
+    width: 430px;
+    margin: 1.6rem 0;
+    background-color: #FF9900;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+
+@media screen and (min-width: 1850px) {
+    header img.bg-image{
+        object-fit: cover;
+        height: 770px;
+        /* border: 2px solid blue; */
+    }
+
+    section .cards .card{
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header nav{
+        height: 200px;
+        padding: 1rem 3rem;
+    }
+
+    button.portal{
+        height: 45px;
+        width: 145px;
+        font-size: 1.1rem;
+    }
+
+    header .logo img{
+        height: 120px;
+    }
+
+    section{
+        flex-direction: column;
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: center;
+    }
+    section .section-title{
+        width: 100%;
+        /* border: 2px solid #008000; */
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+    section .section-text{
+        /* border: 2px solid yellow; */
+        margin: 2rem auto;
+        text-align: center;
+        width: 500px;
+        
+    }
+    section .cards{
+        flex-direction: column;
+        /* border: 2px solid red; */
+        align-items: center;
+    }
+    
+    .modal{
+        width: 650px;
+    }
+
+    .modal h2{
+        font-size: 1.9rem;
+    }
+}  
+
+
+@media screen and (max-width: 750px){
+    header nav{
+        height: 100px;
+        padding: 0 1rem;
+    }
+
+    header nav .logo img{
+        width: 70px;
+        height: 60px;
+    }
+
+    button.portal{
+        height: 35px;
+        width: 125px;
+        font-size: 0.9rem;
+    }
+
+    header .logo img{
+        height: 40px;
+    }
+
+    section .section-text{
+        width: 300px;
+    }
+
+    .divider{
+        width: 300px;
+    }
+
+    section .cards .card{
+        width: 300px;
+    }
+
+    .sponsers .content .logos .logo{
+        margin: 1rem 1rem;
+    }
+
+    .modal{
+        width: 450px;
+        text-align: center;
+    }
+
+    .modal h2{
+        font-size: 1.9rem;
+    }
+
+    .modal input{
+        text-align: center;
+    }
+
+    .modal input{
+        text-align: center;
+        width: 360px;
+    }
+
+    .modal button{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header nav{
+        height: 50px;
+    }
+    header nav .logo img{
+        width: 50px;
+        height: 40px;
+    }
+    header nav button.portal{
+        width: 90px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    .partnership{
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+    }
+    .partnership h3{
+        margin: 1.2rem 0;
+    }
+    .partnership .companies{
+        flex-direction: column;
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .company{
+        margin-bottom: 3rem;
+    }
+    main{
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+    section.section-cards{
+        align-items: center;
+    }
+    section .section-title{
+        /* border: 2px solid green; */
+        font-size: 2.0rem;
+        margin: 0;
+        width: 300px;
+    }
+    section.section-cards .section-title{
+        width: 200px;
+        /* text-align: center; */
+        /* border: 2px solid yellow; */
+
+    }
+    section .cards{
+        width: 200px;
+    }
+    section .cards .card{
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid purple; */
+        margin: 2rem 0;
+        padding: 2rem 0;
+    }
+    .cards .card h2.card-header{
+        font-size: 1.9rem;
+        width: 230px;
+        /* border: 2px solid red; */
+    }
+    .cards .card h3.card-title{
+        font-size: 1.2rem;
+        /* border: 2px solid blue; */
+        width: 200px;
+    }
+    .cards .card p.card-text{
+        /* font-size: 0.8rem; */
+        width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        /* border: 2px solid green; */
+    }
+  
+    section .section-text{
+        width: 200px;
+        margin: 2rem 0;
+    }
+    .divider{
+        width: 100px;
+    }
+    .sponsers .content{
+        justify-content: center;
+    }
+    .sponsers .content h2.message{
+        font-size: 1.7rem;
+        width: 200px;
+        /* border: 2px solid red; */
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .sponsers .content .logos{
+        flex-direction: column;
+    }
+    .sponsers .content .logos .logo{
+        margin: 2rem 0;
+    }
+    h2.footer-message{
+        font-size: 2rem;
+    }
+    footer .contact form input, footer .contact button{
+        width: 250px;
+        text-align: center;
+    }
+
+    .modal{
+        width: 280px;
+        text-align: center;
+    }
+
+    .modal h2{
+        font-size: 1.5rem;
+        margin: 3rem;
+    }
+
+    .modal input{
+        text-align: center;
+        width: 190px;
+    }
+
+    .modal button{
+        width: 190px;
+    }
 }
