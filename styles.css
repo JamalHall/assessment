@@ -333,6 +333,12 @@ footer .contact button{
     position: fixed;
 }
 
+.modal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .modal p{
     position: absolute;
     top: 20px;
