@@ -37,6 +37,11 @@ app.use('/auth', authRoute);
 //     console.log(req.body);
 // })
 
+app.use((err, req, res, next) => {
+    console.log("******ERRORS*****");
+    res.status(err.statusCode).json(err.message);
+})
+
 const port = process.env.PORT || 3001;
 
 app.listen(port, ()=> {
