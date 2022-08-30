@@ -9,47 +9,29 @@ const headerImage = document.querySelector("#header-image")
 const image1 = document.querySelector("#header-image3");
 const image2 = document.querySelector("#header-image2");
 
-// const emailInput = document.querySelector("#email-input");
-// const nameInput = document.querySelector("#name-input");
 const signupForm = document.querySelector("#signup-form")
 
-
-
-// console.log("Email Value: ", emailInput.value)
-// console.log("Name Value: ", nameInput.value)
-// console.log(signupForm);
-
-// const images = ["./assets/banner_image_1.png","./assets/banner_image_2.png"]
 let counter = 0;
-// let imageWidth = image2.clientWidth;
-// console.log(imageWidth)
 
-// signupForm.addEventListener("submit", (e)=> {
-    // e.preventDefault();
-    // const userName = e.target.elements['name-input']
-    // const userEmail = e.target.elements['email-input']
-    // console.log(e);
-    // console.log(userName);
-    // console.log(userEmail);
-// })
-
-
+// Opens the modal after Parent Portal Button is clicked
 portalButton.addEventListener("click", () => {
     backdrop.style.display = "block"
     modal.style.display = "flex"
 });
 
+// Closes the modal after clicking the X button on the corner of the modal
 modalClose.addEventListener("click", () => {
     backdrop.style.display = "none"
     modal.style.display = "none"
 })
 
+// Closes the modal after clicking the backdrop
 backdrop.addEventListener("click", () => {
     backdrop.style.display = "none"
     modal.style.display = "none"
 })
 
-
+// Every 5 seconds an alternate image will swipe right to cover the current image in the header
 setInterval(() => {
     if(counter === 0) {
         image2.style.left = 0;
