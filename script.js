@@ -31,7 +31,7 @@ backdrop.addEventListener("click", () => {
     modal.style.display = "none"
 })
 
-// Every 5 seconds an alternate image will swipe right to cover the current image in the header
+// Every 5 seconds the head image will swipe right to reveal an alternate image
 setInterval(() => {
     if(counter === 0) {
         image1.style.right = 0;
@@ -47,8 +47,6 @@ setInterval(() => {
 
         image2.style.right = 0;
         image1.style.right = "-100%";
-        // setTimeout(() => {
-        // },1000)
         setTimeout(() => {
             
             image1.style.display = "none";
