@@ -3,7 +3,8 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path'
-import session from 'express-session'
+// import session from 'express-session'
+import session from 'cookie-session'
 
 import authRoute from './routes/auth.js'
 
