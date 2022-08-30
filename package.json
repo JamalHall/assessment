@@ -1,69 +1,31 @@
 {
-  
   "name": "assessment2leaf",
-  
   "description": "Hello! If you're reading this, it means that you have moved on your coding assessment with 2Leaf.",
-  
   "version": "1.0.0",
-  
   "main": "index.js",
-  
   "type": "module",
-  
   "scripts": {
-  
-    
   "test": "echo \"Error: no test specified\" && exit 1",
-  
-    
-  "start": "nodemon index.js"
-  
+  "devStart": "nodemon index.js",
+  "start": "node index.js"
   },
-  
-  "repository": {
-  
-    
-  "type": "git",
-  
-    
+  "repository": { 
+  "type": "git",  
   "url": "git+https://github.com/anisr95/assessment2leaf.git"
-  
   },
-  
   "author": "",
-  
   "license": "ISC",
-  
-  "bugs": {
-  
-    
+  "bugs": { 
   "url": "https://github.com/anisr95/assessment2leaf/issues"
-  
   },
-  
   "homepage": "https://github.com/anisr95/assessment2leaf#readme",
-  
-  "dependencies": {
-  
-    
-  "cookie-session": "^2.0.0",
-  
-    
-  "cors": "^2.8.5",
-  
-    
-  "dotenv": "^16.0.1",
-  
-    
+  "dependencies": { 
+  "cookie-session": "^2.0.0", 
+  "cors": "^2.8.5", 
+  "dotenv": "^16.0.1", 
   "express": "^4.18.1",
-  
-    
   "express-session": "^1.17.3",
-  
-    
   "mongoose": "^6.5.3",
-  
-    
   "nodemon": "^2.0.19"
   
   }

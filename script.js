@@ -9,7 +9,9 @@ const headerImage = document.querySelector("#header-image")
 const image1 = document.querySelector("#header-image3");
 const image2 = document.querySelector("#header-image2");
 
-const signupForm = document.querySelector("#signup-form")
+const signupForm = document.querySelector("#signup-form");
+
+const userName = document.querySelector('.user-name');
 
 let counter = 1;
 
@@ -56,3 +58,6 @@ setInterval(() => {
         counter = 0;
     }
 }, 5000);
+
+
+// console.log(userName);
