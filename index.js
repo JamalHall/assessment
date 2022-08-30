@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path'
+import session from 'express-session'
 
 import authRoute from './routes/auth.js'
 
@@ -21,6 +22,8 @@ mongoose.connect(dbURL).then(() => {console.log("Connected to DataBase")}).catch
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+app.use(session({secret: "mySessionSecret"}));
 
 
 import { fileURLToPath } from 'url';
@@ -46,6 +49,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/parentPortal', (req, res) => {
+    if(!req.session.user_id){
+        res.send("You are not authorized - Login using Parent Portal")
+    }
     res.sendFile(__dirname + '/parentPortal.html')
 })
 

@@ -1,5 +1,6 @@
 import User from "../models/User.js";
 import ExpressError from "../utils/ExpressError.js";
+import session from "express-session";
 
 
 export const signup = async (req, res, next) => {
@@ -19,6 +20,8 @@ export const signup = async (req, res, next) => {
         });
 
         await newUser.save();
+
+        req.session.user_id = newUser._id;
 
         console.log("Here is your info: ", req.body);
         console.log(userEmail)
@@ -41,6 +44,8 @@ export const login = async (req, res, next) => {
         const isPasswordCorrect = userPassword === user.password;
 
         if(!isPasswordCorrect) throw new ExpressError("Password is incorrect", 401);
+
+        req.session.user_id = user._id;
  
         console.log(req.body)
         // res.sendFile("../parentPortal.html");
