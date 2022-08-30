@@ -9,24 +9,14 @@
 }
 
 header{
-    /* background-image: url("./assets/banner_image_1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 80vh; */
-    /* height: 800px; */
-    /* width: 100%; */
     position: relative;
     width: 100vw;
 }
-
-
 
 #header-image2{
     position: absolute;
     top: 0;
     left: -100%;
-    /* transform: translateX(500px); */
     transition: 1.5s;
 }
 
@@ -34,18 +24,13 @@ header{
     position: absolute;
     top: 0;
     left: -100%;
-    /* transform: translateX(500px); */
     transition: 1.5s;
 }
 
 header img.bg-image{
-    /* height: 800px; */
-    /* height: 100%; */
-    /* height: 80vh; */
     width: 100%;
     object-fit: contain;
     object-position: top center;
-    /* border: 2px solid red; */
 }
 
 header nav{
@@ -58,13 +43,12 @@ header nav{
     top: 0;
     left: 0;
     width: 100vw;
-    /* border: 2px solid red; */
+
 }
 
 header nav .logo img{
     width: 120px;
     height: 50%;
-    /* border: 3px solid blue; */
 }
 
 button.portal{
@@ -80,15 +64,12 @@ button.portal{
     font-weight: 400;
 }
 
-
 .partnership{
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* border: 3px solid green; */
-    /* height: 250px; */
 }
 
 .partnership .companies{
@@ -98,15 +79,12 @@ button.portal{
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    /* border: 3px solid green; */
 }
 
 .company{
     padding: 0 5rem;
-    /* border: 3px solid purple; */
-    /* height: 50px; */
-    /* flex: 1 1 0; */
 }
+
 .company img {
     height: 60px;
 }
@@ -114,7 +92,6 @@ button.portal{
 main{
     background-color: #151515;
     color: white;
-    /* border: 3px solid red; */
     padding: 3rem 8rem;
 }
 
@@ -122,8 +99,6 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 3px solid orange; */
-    /* padding: 5rem 3rem; */
     width: auto;
     margin: 5rem 0;
 }
@@ -133,18 +108,13 @@ section .section-title{
     color: #FF9900;
     font-weight: 400;
     font-size: 3.5rem;
-    /* border: 2px solid green; */
-    /* flex-grow: 1; */
-    /* width: 450px; */
     margin-right: 5rem;
-    /* width: 100px; */
 }
 
 section .section-text{
     font-family: 'Open Sans', sans-serif;
     width: 680px;
     margin-left: 5rem;
-    /* flex-grow: 9; */
 }
 
 .divider{
@@ -155,10 +125,8 @@ section .section-text{
 }
 
 section.section-cards{
-    /* border: 3px solid green; */
     flex-direction: column;
     align-items: flex-start;
-    /* margin-bottom: 4rem; */
 }
 
 section.section-cards .section-title{
@@ -168,7 +136,6 @@ section.section-cards .section-title{
 section .cards{
     display: flex;
     justify-content: space-between;
-    /* border: 3px solid red; */
     width: 100%;
 }
 
@@ -179,7 +146,6 @@ section .cards .card{
     min-width: 450px;
     margin: 2rem 1rem;
     padding: 2rem 2rem;
-    /* border: 3px solid green; */
 }
 
 .cards .card h2.card-header{
@@ -196,7 +162,6 @@ section .cards .card{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin-bottom: 1rem;
-    /* line-height: 32px; */
 }
 
 .cards .card p.card-text{
@@ -208,8 +173,6 @@ section .cards .card{
 
 .sponsers{
     position: relative;
-    /* height: 400px; */
-    /* border: 2px solid green; */
 }
 
 .sponsers img.sponsers-bg{
@@ -221,7 +184,6 @@ section .cards .card{
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* border: 2px solid red; */
 }
 
 .sponsers .content{
@@ -238,7 +200,6 @@ section .cards .card{
     margin: 8rem 0;
     line-height: 54px;
     letter-spacing: 3px;
-    /* border: 2px solid red; */
 }
 
 .sponsers .content .logos{
@@ -246,8 +207,6 @@ section .cards .card{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
-    /* width: 400px; */
-    /* border: 2px solid green; */
 }
 
 .sponsers .content .logos .logo{
@@ -305,7 +264,6 @@ footer .contact button{
     height: 100vh;
     width: 100vw;
     background-color: rgba(0,0,0,0.5);
-    /* position: absolute; */
     position: fixed;
     top: 0;
     left: 0;
@@ -320,7 +278,6 @@ footer .contact button{
     width: 800px;
     position: absolute;
     z-index: 11;
-    /* margin: 0 auto; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -380,12 +337,11 @@ footer .contact button{
 }
 
 
-
+/* For Screens Bigger than 1850px */
 @media screen and (min-width: 1850px) {
     header img.bg-image{
         object-fit: cover;
         height: 770px;
-        /* border: 2px solid blue; */
     }
 
     section .cards .card{
@@ -393,6 +349,7 @@ footer .contact button{
     }
 }
 
+/* For Screens Smaller than 1200px */
 @media screen and (max-width: 1200px) {
     header nav{
         height: 200px;
@@ -411,27 +368,26 @@ footer .contact button{
 
     section{
         flex-direction: column;
-        /* border: 2px solid red; */
         align-items: center;
         justify-content: center;
     }
+
     section .section-title{
         width: 100%;
-        /* border: 2px solid #008000; */
         text-align: center;
         margin: 0 auto;
         
     }
+
     section .section-text{
-        /* border: 2px solid yellow; */
         margin: 2rem auto;
         text-align: center;
         width: 500px;
         
     }
+
     section .cards{
         flex-direction: column;
-        /* border: 2px solid red; */
         align-items: center;
     }
     
@@ -445,6 +401,7 @@ footer .contact button{
 }  
 
 
+/* For Screens Smaller than 750px */
 @media screen and (max-width: 750px){
     header nav{
         height: 100px;
@@ -505,60 +462,67 @@ footer .contact button{
     }
 }
 
+
+/* For Screens Smaller than 500px */
 @media screen and (max-width: 500px){
     header nav{
         height: 80px;
     }
+
     header nav .logo img{
         width: 50px;
         height: 40px;
     }
+
     header nav button.portal{
         width: 90px;
         height: 30px;
         font-size: 0.7rem;
     }
+
     .partnership{
-        /* border: 2px solid red; */
         justify-content: center;
         align-items: center;
         padding: 1rem;
         margin: 0;
     }
+
     .partnership h3{
         margin: 1.2rem 0;
     }
+
     .partnership .companies{
         flex-direction: column;
         padding: 1rem 0;
         margin: 0;
     }
+
     .company{
         margin-bottom: 3rem;
     }
+
     main{
         text-align: center;
-        /* border: 2px solid red; */
     }
+
     section.section-cards{
         align-items: center;
     }
+
     section .section-title{
-        /* border: 2px solid green; */
         font-size: 2.0rem;
         margin: 0;
         width: 300px;
     }
+
     section.section-cards .section-title{
         width: 200px;
-        /* text-align: center; */
-        /* border: 2px solid yellow; */
-
     }
+
     section .cards{
         width: 200px;
-        /* border: 2px solid red; */
     }
+
     section .cards .card{
         min-width: 370px;
         display: flex;
@@ -566,54 +530,58 @@ footer .contact button{
         text-align: center;
         align-items: center;
         justify-content: center;
-        /* border: 2px solid purple; */
         margin: 2rem 0;
         padding: 2rem 0;
     }
+
     .cards .card h2.card-header{
         font-size: 1.9rem;
         width: 230px;
-        /* border: 2px solid red; */
     }
+
     .cards .card h3.card-title{
         font-size: 1.2rem;
-        /* border: 2px solid blue; */
         width: 200px;
     }
+
     .cards .card p.card-text{
-        /* font-size: 0.8rem; */
         width: 340px;
         margin: 0 auto;
         text-align: center;
-        /* border: 2px solid green; */
     }
   
     section .section-text{
         width: 260px;
         margin: 2rem 0;
     }
+
     .divider{
         width: 100px;
     }
+
     .sponsers .content{
         justify-content: center;
     }
+
     .sponsers .content h2.message{
         font-size: 1.7rem;
         width: 200px;
-        /* border: 2px solid red; */
         text-align: center;
         margin: 2rem 0;
     }
+
     .sponsers .content .logos{
         flex-direction: column;
     }
+
     .sponsers .content .logos .logo{
         margin: 2rem 0;
     }
+
     h2.footer-message{
         font-size: 2rem;
     }
+
     footer .contact form input, footer .contact button{
         width: 300px;
         text-align: center;
@@ -639,13 +607,17 @@ footer .contact button{
     }
 }
 
+
+/* For Screens Smaller than 400px */
 @media screen and (max-width: 400px){
     section .cards .card{
         min-width: 220px;
     }
+
     .cards .card p.card-text{
         width: 280px;
     }
+    
     section .section-text{
         width: 200px;
     }

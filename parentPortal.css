@@ -11,7 +11,6 @@
 header{
     position: relative;
     width: 100vw;
-    /* border: 2px solid green; */
 }
 
 header h2{
@@ -23,7 +22,6 @@ header h2{
     font-size: 2.2rem;
     letter-spacing: 3px;
     font-weight: 400;
-    /* border: 2px solid red; */
 }
 
 header .header-title{
@@ -34,7 +32,6 @@ header .header-title{
     position: absolute;
     top: 0;
     left: -100%;
-    /* transform: translateX(500px); */
     transition: 1.5s;
 }
 
@@ -42,18 +39,13 @@ header .header-title{
     position: absolute;
     top: 0;
     left: -100%;
-    /* transform: translateX(500px); */
     transition: 1.5s;
 }
 
 header img.bg-image{
-    /* height: 800px; */
-    /* height: 100%; */
-    /* height: 80vh; */
     width: 100%;
     object-fit: contain;
     object-position: top center;
-    /* border: 2px solid red; */
 }
 
 header nav{
@@ -71,7 +63,6 @@ header nav{
 header nav .logo img{
     width: 120px;
     height: 50%;
-    /* border: 3px solid blue; */
 }
 
 button.portal{
@@ -87,15 +78,12 @@ button.portal{
     font-weight: 400;
 }
 
-
 .partnership{
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* border: 3px solid green; */
-    /* height: 250px; */
 }
 
 .partnership .companies{
@@ -105,15 +93,12 @@ button.portal{
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    /* border: 3px solid green; */
 }
 
 .company{
     padding: 0 5rem;
-    /* border: 3px solid purple; */
-    /* height: 50px; */
-    /* flex: 1 1 0; */
 }
+
 .company img {
     height: 60px;
 }
@@ -121,7 +106,6 @@ button.portal{
 main{
     background-color: #151515;
     color: white;
-    /* border: 3px solid red; */
     padding: 3rem 4rem;
 }
 
@@ -152,11 +136,9 @@ main{
 .schedule-info{
     margin-bottom: 2rem;
     min-width: 480px;
-    /* border: 2px slateblue solid; */
 }
 
 .schedule-info-container{
-    /* border: 2px solid purple; */
     margin-left: 2rem;
     
 }
@@ -190,14 +172,11 @@ main{
 }
 
 .extra-info{
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
     
 }
-
-
 
 .extra-info h2{
     font-size: 2.8rem;
@@ -206,7 +185,6 @@ main{
     font-weight: 400;
     letter-spacing: 1.2px;
     margin-bottom: 1rem;
-    /* border: 2px solid red; */
     padding: 0;
     width: 550px;
 }
@@ -218,7 +196,6 @@ main{
     min-width: 600px;
     margin-bottom: 1.2rem;
     min-width: 450px;
-    /* border: 2px solid green; */
 }
 
 .extra-info span{
@@ -228,8 +205,6 @@ main{
 
 .sponsers{
     position: relative;
-    /* height: 400px; */
-    /* border: 2px solid green; */
 }
 
 .sponsers img.sponsers-bg{
@@ -241,7 +216,6 @@ main{
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* border: 2px solid red; */
 }
 
 .sponsers .content{
@@ -258,7 +232,6 @@ main{
     margin: 8rem 0;
     line-height: 54px;
     letter-spacing: 3px;
-    /* border: 2px solid red; */
 }
 
 .sponsers .content .logos{
@@ -266,8 +239,6 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
-    /* width: 400px; */
-    /* border: 2px solid green; */
 }
 
 .sponsers .content .logos .logo{
@@ -275,12 +246,11 @@ main{
 }
 
 
-
+/* For Screens Bigger than 1850px */
 @media screen and (min-width: 1850px) {
     header img.bg-image{
         object-fit: cover;
         height: 770px;
-        /* border: 2px solid blue; */
     }
 
     section .cards .card{
@@ -288,6 +258,8 @@ main{
     }
 }
 
+
+/* For Screens Smaller than 1200px */
 @media screen and (max-width: 1200px) {
     header nav{
         height: 200px;
@@ -329,6 +301,7 @@ main{
 }  
 
 
+/* For Screens Smaller than 750px */
 @media screen and (max-width: 750px){
     header nav{
         height: 100px;
@@ -358,14 +331,6 @@ main{
         width: 400px;
     }
 
-    .schedule-info .text{
-        /* border: 2px solid red; */
-        /* border: 2px solid red; */
-        /* padding: 0; */
-        /* margin: 0; */
-        /* min-width: 200px; */
-    }
-
     .location .schedule-image-container img{
         width: 400px;
     }
@@ -379,19 +344,22 @@ main{
     }
 
     .extra-info p{
-        /* border: 2px solid red; */
         min-width: 300px;
     }
 }
 
+
+/* For Screens Smaller than 590px */
 @media screen and (max-width: 590px){
     header nav{
         height: 50px;
     }
+
     header nav .logo img{
         width: 50px;
         height: 40px;
     }
+
     header nav button.portal{
         width: 90px;
         height: 30px;
@@ -399,33 +367,35 @@ main{
     }
 
     header h2.header-title{
-        /* border: 2px solid red; */
         font-size: 1.4rem;
         width: 250px;
         left: 30px;
         bottom: 50px;
     }
+
     .partnership{
-        /* border: 2px solid red; */
         justify-content: center;
         align-items: center;
         padding: 1rem;
         margin: 0;
     }
+
     .partnership h3{
         margin: 1.2rem 0;
     }
+
     .partnership .companies{
         flex-direction: column;
         padding: 1rem 0;
         margin: 0;
     }
+
     .company{
         margin-bottom: 3rem;
     }
+
     main{
         text-align: center;
-        /* border: 2px solid red; */
     }
 
     .schedule{
@@ -433,7 +403,6 @@ main{
         align-items: center;
         text-align: center;
         text-align: center;
-        /* border: 2px solid yellow; */
         display: flex;
         flex-direction: column;
         
@@ -449,7 +418,6 @@ main{
     }
 
     .schedule .schedule-image-container img{
-        /* width: 200px; */
         margin: 0;
         padding: 0;
         width: 100%;
@@ -460,10 +428,6 @@ main{
         width: 100px;
         top: 10px;
         left: 10px;
-    }
-
-    .location{
-        /* border: 2px solid green; */
     }
 
     .location .schedule-image-container img{
@@ -481,17 +445,10 @@ main{
 
     .location p{
         min-width: 100px;
-        /* border: 2px solid red; */
         margin: 0;
     }
 
-    .schedule .schedule-image-container h2{
-        /* border: 2px solid red; */
-        
-    }
-
     .schedule .schedule-info{
-        /* border: 2px solid green; */
         min-width: 100px;
         margin: 0;
         text-align: center;
@@ -503,7 +460,6 @@ main{
     }
 
     .schedule .schedule-info .title{
-        /* border: 2px solid blue; */
         width: 230px;
         margin-bottom: 1rem;
     }
@@ -522,7 +478,6 @@ main{
         font-size: 1rem;
         margin-bottom: 1rem;
         width: 100%;
-        /* min-width: 100px; */
     }
     
     .extra-info .cost{
@@ -545,38 +500,33 @@ main{
         padding: 0;
 
     }
-
-    
-  
     
     .sponsers .content{
         justify-content: center;
     }
+
     .sponsers .content h2.message{
         font-size: 1.7rem;
         width: 200px;
-        /* border: 2px solid red; */
         text-align: center;
         margin: 2rem 0;
     }
+
     .sponsers .content .logos{
         flex-direction: column;
     }
+
     .sponsers .content .logos .logo{
         margin: 2rem 0;
     }
+
     h2.footer-message{
         font-size: 2rem;
     }
+
     footer .contact form input, footer .contact button{
         width: 250px;
         text-align: center;
     }
-
 }
 
-@media screen and (max-width: 590px){
-
-
-
-}
