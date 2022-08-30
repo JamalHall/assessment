@@ -5,7 +5,8 @@ Hello!
 Please clone this repository, and run the following command:
 
 npm install
-node index.js
+
+npm start
 
 server will be running at http://localhost:3001/
 
