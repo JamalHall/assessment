@@ -507,7 +507,7 @@ footer .contact button{
 
 @media screen and (max-width: 500px){
     header nav{
-        height: 50px;
+        height: 80px;
     }
     header nav .logo img{
         width: 50px;
@@ -557,9 +557,10 @@ footer .contact button{
     }
     section .cards{
         width: 200px;
+        /* border: 2px solid red; */
     }
     section .cards .card{
-        min-width: 200px;
+        min-width: 370px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -581,14 +582,14 @@ footer .contact button{
     }
     .cards .card p.card-text{
         /* font-size: 0.8rem; */
-        width: 280px;
+        width: 340px;
         margin: 0 auto;
         text-align: center;
         /* border: 2px solid green; */
     }
   
     section .section-text{
-        width: 200px;
+        width: 260px;
         margin: 2rem 0;
     }
     .divider{
@@ -614,7 +615,7 @@ footer .contact button{
         font-size: 2rem;
     }
     footer .contact form input, footer .contact button{
-        width: 250px;
+        width: 300px;
         text-align: center;
     }
 
@@ -635,5 +636,17 @@ footer .contact button{
 
     .modal button{
         width: 190px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    section .cards .card{
+        min-width: 220px;
+    }
+    .cards .card p.card-text{
+        width: 280px;
+    }
+    section .section-text{
+        width: 200px;
     }
 }
