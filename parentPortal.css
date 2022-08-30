@@ -194,6 +194,7 @@ main{
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    
 }
 
 
@@ -207,6 +208,7 @@ main{
     margin-bottom: 1rem;
     /* border: 2px solid red; */
     padding: 0;
+    width: 550px;
 }
 
 .extra-info p{
@@ -215,6 +217,8 @@ main{
     padding-right: 2rem;
     min-width: 600px;
     margin-bottom: 1.2rem;
+    min-width: 450px;
+    /* border: 2px solid green; */
 }
 
 .extra-info span{
@@ -300,38 +304,27 @@ main{
         height: 120px;
     }
 
-    section{
+    .schedule{
         flex-direction: column;
-        /* border: 2px solid red; */
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
     }
-    section .section-title{
-        width: 100%;
-        /* border: 2px solid #008000; */
-        text-align: center;
-        margin: 0 auto;
-        
-    }
-    section .section-text{
-        /* border: 2px solid yellow; */
-        margin: 2rem auto;
-        text-align: center;
-        width: 500px;
-        
-    }
-    section .cards{
-        flex-direction: column;
-        /* border: 2px solid red; */
-        align-items: center;
-    }
-    
-    .modal{
-        width: 650px;
+    .schedule .schedule-image-container{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
     }
 
-    .modal h2{
-        font-size: 1.9rem;
+    .location{
+        flex-direction: column;
+    }
+
+    .location .schedule-image-container{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .extra-info{
+        flex-direction: column;
+        margin-left: 2rem;
     }
 }  
 
@@ -357,46 +350,41 @@ main{
         height: 40px;
     }
 
-    section .section-text{
-        width: 300px;
-    }
-
-    .divider{
-        width: 300px;
-    }
-
-    section .cards .card{
-        width: 300px;
-    }
-
     .sponsers .content .logos .logo{
         margin: 1rem 1rem;
     }
 
-    .modal{
-        width: 450px;
-        text-align: center;
+    .schedule .schedule-image-container img{
+        width: 400px;
     }
 
-    .modal h2{
-        font-size: 1.9rem;
+    .schedule-info .text{
+        /* border: 2px solid red; */
+        /* border: 2px solid red; */
+        /* padding: 0; */
+        /* margin: 0; */
+        /* min-width: 200px; */
     }
 
-    .modal input{
-        text-align: center;
+    .location .schedule-image-container img{
+        width: 400px;
     }
 
-    .modal input{
-        text-align: center;
-        width: 360px;
+    .location p{
+        min-width: 300px;
     }
 
-    .modal button{
-        width: 360px;
+    .extra-info h2{
+        width: 350px;
+    }
+
+    .extra-info p{
+        /* border: 2px solid red; */
+        min-width: 300px;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 590px){
     header nav{
         height: 50px;
     }
@@ -408,6 +396,14 @@ main{
         width: 90px;
         height: 30px;
         font-size: 0.7rem;
+    }
+
+    header h2.header-title{
+        /* border: 2px solid red; */
+        font-size: 1.4rem;
+        width: 250px;
+        left: 30px;
+        bottom: 50px;
     }
     .partnership{
         /* border: 2px solid red; */
@@ -431,60 +427,128 @@ main{
         text-align: center;
         /* border: 2px solid red; */
     }
-    section.section-cards{
-        align-items: center;
-    }
-    section .section-title{
-        /* border: 2px solid green; */
-        font-size: 2.0rem;
-        margin: 0;
-        width: 300px;
-    }
-    section.section-cards .section-title{
-        width: 200px;
-        /* text-align: center; */
-        /* border: 2px solid yellow; */
 
-    }
-    section .cards{
-        width: 200px;
-    }
-    section .cards .card{
-        min-width: 200px;
+    .schedule{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-align: center;
+        /* border: 2px solid yellow; */
         display: flex;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
+        
+    }
+
+    .schedule .schedule-image-container{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        /* border: 2px solid purple; */
-        margin: 2rem 0;
-        padding: 2rem 0;
+        align-items: center;
+        
     }
-    .cards .card h2.card-header{
-        font-size: 1.9rem;
-        width: 230px;
-        /* border: 2px solid red; */
+
+    .schedule .schedule-image-container img{
+        /* width: 200px; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
-    .cards .card h3.card-title{
-        font-size: 1.2rem;
-        /* border: 2px solid blue; */
-        width: 200px;
+
+    .schedule .schedule-image-container h2{
+        font-size: 1.4rem;
+        width: 100px;
+        top: 10px;
+        left: 10px;
     }
-    .cards .card p.card-text{
-        /* font-size: 0.8rem; */
-        width: 280px;
-        margin: 0 auto;
-        text-align: center;
+
+    .location{
         /* border: 2px solid green; */
     }
-  
-    section .section-text{
-        width: 200px;
-        margin: 2rem 0;
+
+    .location .schedule-image-container img{
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
-    .divider{
+
+    .location .schedule-image-container h2{
+        font-size: 1.8rem;
+        top: 10px;
+        left: 20px;
         width: 100px;
     }
+
+    .location p{
+        min-width: 100px;
+        /* border: 2px solid red; */
+        margin: 0;
+    }
+
+    .schedule .schedule-image-container h2{
+        /* border: 2px solid red; */
+        
+    }
+
+    .schedule .schedule-info{
+        /* border: 2px solid green; */
+        min-width: 100px;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .schedule .schedule-info .title{
+        /* border: 2px solid blue; */
+        width: 230px;
+        margin-bottom: 1rem;
+    }
+
+    .schedule .schedule-info .text{
+        margin-bottom: 2rem;
+    }
+    
+    .extra-info h2{
+        font-size: 1.9rem;
+        margin: 1.5rem 0;
+        width: 100%;
+    }
+
+    .extra-info p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        /* min-width: 100px; */
+    }
+    
+    .extra-info .cost{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .extra-info .seasons{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    
+  
+    
     .sponsers .content{
         justify-content: center;
     }
@@ -509,22 +573,10 @@ main{
         text-align: center;
     }
 
-    .modal{
-        width: 280px;
-        text-align: center;
-    }
+}
 
-    .modal h2{
-        font-size: 1.5rem;
-        margin: 3rem;
-    }
+@media screen and (max-width: 590px){
 
-    .modal input{
-        text-align: center;
-        width: 190px;
-    }
 
-    .modal button{
-        width: 190px;
-    }
+
 }
