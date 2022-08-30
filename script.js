@@ -11,7 +11,7 @@ const image2 = document.querySelector("#header-image2");
 
 const signupForm = document.querySelector("#signup-form")
 
-let counter = 0;
+let counter = 1;
 
 // Opens the modal after Parent Portal Button is clicked
 portalButton.addEventListener("click", () => {
@@ -34,20 +34,21 @@ backdrop.addEventListener("click", () => {
 // Every 5 seconds an alternate image will swipe right to cover the current image in the header
 setInterval(() => {
     if(counter === 0) {
-        image2.style.left = 0;
-        image1.style.left = "-100%";
+        image1.style.right = 0;
+        image2.style.right = "-100%";
         
         
         setTimeout(() => {
             image1.style.display = "block";
+            image2.style.right = 0;
         }, 1500)
         counter++;
     } else {
 
-        image1.style.left = 0;
-        setTimeout(() => {
-            image2.style.left = "-100%";
-        },2000)
+        image2.style.right = 0;
+        image1.style.right = "-100%";
+        // setTimeout(() => {
+        // },1000)
         setTimeout(() => {
             
             image1.style.display = "none";
