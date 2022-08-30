@@ -28,7 +28,7 @@ export const signup = async (req, res, next) => {
         console.log(userName)
         console.log(userPassword)
 
-        res.send("User Created");
+        res.redirect('/parentPortal');
     } catch (error) {
         next(error)
     }

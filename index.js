@@ -23,7 +23,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.use(session({secret: "mySessionSecret"}));
+app.use(session({secret: process.env.SESSION_SECRET}));
 
 
 import { fileURLToPath } from 'url';
